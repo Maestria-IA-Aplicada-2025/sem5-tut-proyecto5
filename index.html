@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Supervivencia Titanic</title>
+</head>
+<body>
+    <h1>Predicción de Supervivencia Titanic</h1>
+    <form action="/predict" method="POST">
+        <label for="Pclass">Clase (Pclass):</label><br>
+        <input type="number" id="Pclass" name="Pclass" required><br><br>
+        
+        <label for="Sex">Sexo:</label><br>
+        <select id="Sex" name="Sex" required>
+            <option value="male">Masculino</option>
+            <option value="female">Femenino</option>
+        </select><br><br>
+        
+        <label for="Age">Edad:</label><br>
+        <input type="number" step="any" id="Age" name="Age" required><br><br>
+        
+        <label for="SibSp">Número de hermanos/cónyuges a bordo (SibSp):</label><br>
+        <input type="number" id="SibSp" name="SibSp" required><br><br>
+        
+        <label for="Parch">Número de padres/hijos a bordo (Parch):</label><br>
+        <input type="number" id="Parch" name="Parch" required><br><br>
+        
+        <label for="Fare">Tarifa del boleto (Fare):</label><br>
+        <input type="number" step="any" id="Fare" name="Fare" required><br><br>
+        
+        <input type="submit" value="Predecir">
+    </form>
+</body>
+</html>
